@@ -1,14 +1,14 @@
 {
-  "name": "angular-elements",
+  "name": "backbone-elements",
   "version": "0.0.0",
-  "homepage": "https://github.com/MVC-Elements/angular-elements",
+  "homepage": "https://github.com/MVC-Elements/backbone-elements",
   "authors": [
     "PixelsCommander <denis.radin@gmail.com>"
   ],
-  "description": "Allows to use AngularJS component as HTML element",
+  "description": "Allows to use Backbone component as HTML element",
   "keywords": [
-    "angularjs",
-    "angular",
+    "backbonejs",
+    "backbone",
     "web-components",
     "custom",
     "elements"

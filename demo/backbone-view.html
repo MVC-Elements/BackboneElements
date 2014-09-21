@@ -15,11 +15,11 @@
     </script>
     <backbone-search id="mySearch" label="{window.firstLabel}"></backbone-search>
     <script>
-        var myComponentInstance = document.getElementById('myList');
+        var myComponentInstance = document.getElementById('mySearch');
         myComponentInstance.testMethod();
 
         setTimeout(function(){
-            myComponentInstance.setAttribute('items', '{window.anotherArray}');
+            myComponentInstance.setAttribute('label', '{window.secondLabel}');
         }, 1000);
     </script>
 </body>

@@ -1,23 +1,30 @@
 SearchView = Backbone.View.extend({
-    initialize: function(options){
+    initialize: function (options) {
         this.attributes = options;
         this.render();
     },
-    render: function(){
+    render: function () {
         // Compile the template using underscore
-        var self = this;
-        var template = _.template( '<label><%= label %></label>' +
+        var attr = this.attributes;
+        var template = _.template('<label><%= label %></label>' +
             '<input type="text" id="search_input" />' +
-            '<input type="button" id="search_button" value="Search" />', self.attributes );
+            '<input type="button" id="search_button" value="Search" />');
         // Load the compiled HTML into the Backbone "el"
-        this.$el.html( template );
+        this.$el.html(template(attr));
     },
     events: {
         "click input[type=button]": "doSearch"
     },
-    doSearch: function( event ){
+    doSearch: function (event) {
         // Button clicked, you can access the element that was clicked with event.currentTarget
-        alert( "Search for " + $("#search_input").val() );
+        alert("Search for " + $("#search_input").val());
+    },
+    testMethod: function () {
+        alert("View`s method was triggered. Look at page`s and component code.");
+    },
+    attributeChanged: function(attributes) {
+        this.render();
+        alert('Element attribute changed, this updated attributes property of view and executed view`s attributeChanged callback which includes this.render and current alert');
     }
 });
 

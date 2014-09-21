@@ -17,12 +17,12 @@
             this.backboneElement = new viewClass(extend({'el': $(this), '_content': this._content}, attributesObjects, true));
             this.backboneElement._content = this._content;
             this.backboneElement.attributes = attributesObjects;
-            extend(this, viewClass, false, true);
+            extend(this, this.backboneElement, false, true);
         };
 
         elementPrototype.attributeChangedCallback = function () {
             var attributesObjects = getAllProperties(this, this.attributes);
-            extend(this.backboneElement, attributesObjects, true);
+            extend(this.backboneElement.attributes, attributesObjects, true);
 
             if (this.backboneElement.attributeChanged !== undefined && typeof this.backboneElement.attributeChanged === 'function') {
                 this.backboneElement.attributeChanged.apply(this.backboneElement, [attributesObjects]);
