@@ -2,10 +2,10 @@
     <img alt="Reactive Elements" src="http://pixelscommander.com/polygon/backbone-elements/assets/backbone-elements-logo-small.png"/>
 </a>
 
-BackboneJS views as native HTML elements
+Backbone views as native HTML elements
 ===========================================
 
-Tiny Google [Polymer](http://polymer-project.org) or Mozilla [X-Tags](http://www.x-tags.org/) add-on which allows to use [BackboneJS](https://github.com/jashkenas/backbone/) views as [custom HTML elements](http://w3c.github.io/webcomponents/spec/custom/). Also works with a native Custom Elements implementation if present.
+Tiny Google [Polymer](http://polymer-project.org) or Mozilla [X-Tags](http://www.x-tags.org/) add-on which allows to use [Backbone](https://github.com/jashkenas/backbone/) views as [custom HTML elements](http://w3c.github.io/webcomponents/spec/custom/). Also works with a native Custom Elements implementation if present.
 
 [Demo](http://pixelscommander.com/polygon/backbone-elements/demo/)
 
@@ -44,7 +44,7 @@ In this case attributes._content is equal to "Hello world".
 Dependencies
 ------------
 
-- [BackboneJS](https://github.com/jashkenas/backbone/)
+- [Backbone](https://github.com/jashkenas/backbone/)
 - [X-Tag core](https://github.com/x-tag/core) or [Polymer custom elements](https://github.com/Polymer/CustomElements) or native browser support for custom elements.
 
 License
