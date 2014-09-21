@@ -38,7 +38,7 @@ Original content of a custom element is injected to component as ```attributes._
 <my-backbone-component>Hello world</my-backbone-component>
 ```
 
-In this case $scope._content is equal to "Hello world".
+In this case attributes._content is equal to "Hello world".
 
 
 Dependencies
