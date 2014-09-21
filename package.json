@@ -1,0 +1,30 @@
+{
+  "name": "backbone-elements",
+  "version": "0.0.0",
+  "description": "Allows to use BackboneJS view as HTML element",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "./node_modules/.bin/bower install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MVC-Elements/backbone-elements.git"
+  },
+  "keywords": [
+    "mvc",
+    "backbonejs",
+    "web-components"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MVC-Elements/backbone-elements/issues"
+  },
+  "homepage": "https://github.com/MVC-Elements/backbone-elements",
+  "devDependencies": {
+    "gulp": "~3.8.5",
+    "gulp-uglify": "~0.3.1",
+    "bower": "~1.3.11"
+  }
+}

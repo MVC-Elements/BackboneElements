@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Backbone view as a web-component</title>
+    <script src="../bower_components/underscore/underscore-min.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/backbone/backbone.js"></script>
+    <script src="../src/backbone-elements.js"></script>
+    <script src="js/backbone-search.js"></script>
+</head>
+<body>
+    <script>
+        window.firstLabel = 'Backbone search';
+        window.secondLabel = 'Hello to components world';
+    </script>
+    <backbone-search id="mySearch" label="{window.firstLabel}"></backbone-search>
+    <script>
+        var myComponentInstance = document.getElementById('myList');
+        myComponentInstance.testMethod();
+
+        setTimeout(function(){
+            myComponentInstance.setAttribute('items', '{window.anotherArray}');
+        }, 1000);
+    </script>
+</body>
+</html>
