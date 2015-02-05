@@ -2,8 +2,8 @@
     <img alt="Reactive Elements" src="http://pixelscommander.com/polygon/backbone-elements/assets/backbone-elements-logo-small.png"/>
 </a>
 
-Backbone views as native HTML elements
-===========================================
+Backbone views as native HTML elements (web components)
+=======================================================
 
 Tiny Google [Polymer](http://polymer-project.org) or Mozilla [X-Tags](http://www.x-tags.org/) add-on which allows to use [Backbone](https://github.com/jashkenas/backbone/) views as [custom HTML elements](http://w3c.github.io/webcomponents/spec/custom/). Also works with a native Custom Elements implementation if present.
 
